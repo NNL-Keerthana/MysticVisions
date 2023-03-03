@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MythicVisions</title> 
+  <link rel="stylesheet" href="./style.css">
+  
+  <link rel="icon" href="data:,">
+
+  
+</head>
+
+<body>
+
+  <h1>MythicVisions</h1> 
+
+  <div class="align">
+    <form action="http://127.0.0.1:5000/generate_story" method="POST">
+
+      <label for="image">Choose an image:</label><br>
+      <input type="file" id="image" name="image">
+      <br><br>
+      
+        <input type="radio" id="horror" name="genre" value="HTML">
+        <label for="horror">Horror</label><br>
+        <input type="radio" id="fantasy" name="genre" value="fantasy">
+        <label for="fantasy">Fantasy</label><br>
+        <input type="radio" id="fiction" name="genre" value="fiction">
+        <label for="fiction">Fiction</label>
+      
+      <br><br>   
+      <input type="submit" value="Generate Story" title="submit"/>
+    </form>
+    <img src="./imgs/b6.jpg" alt="image" height="300" width="400">
+
+    <form action="http://127.0.0.1:5000/generate_story" method="GET">
+      <!--
+        {% if story %}    
+      <div class="story" value="Generate Story">{{ story }}</div>
+      {% endif %} 
+      -->
+      <div class="story" value="Generate Story">
+        Janet and Stephan were two people with many similarities. Both had the same deep, dark black hair and a tendency to dress formally too. On this day they compared each other, wearing white shirts with frilly old lace collars. The bright, crisp white set against the creamy but delicate fabric of the lace was a sight to behold. Even the choice of neckties made them look like two peas in a pod; identical paisley and gingham ties adding the perfect finishing touch to their outfits.
+
+        They arrived hand in hand at the celebration, drawing in eyes and drawing out compliments due to the perfection of their attire and shared style. Other guests gawked as Janet and Stephan graced each other with love and laughter, no one able to take their eyes off the couple. Every other guest seemed to fade away, their presence seeming almost romantic and surreal.
+
+        The two were the talk of the party, their relationship and attire admired by those who took note of it. They brought oldlace with them to the party, Natalie and Stephan becoming a timeless representation of kindred passion in fashion. An inspiration to all, the pair of people in white were the epitome of successful coupling, something Janet and Stephan basked in for the rest of the night.
+      </div>
+
+      
+    </form>
+  
+    
+
+      <!-- <p>
+        {{ story }}
+      </p> -->
+
+  </div> 
+
+  
+</body>
+
